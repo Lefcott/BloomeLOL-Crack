@@ -28,6 +28,7 @@
   "homepage": "https://github.com/lefcott19/BloomeChatbot#readme",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
+    "@lefcott/filter-json": "^1.8.1",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "connect-redis": "^4.0.4",
