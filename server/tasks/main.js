@@ -27,6 +27,7 @@ const authorize = async proxy => {
     options: {
       method: 'post',
       url: RIOT_AUTH_URL,
+      withCredentials: true,
       // proxy: { host, port, protocol: 'https' },
       // httpsAgent: new HttpsProxyAgent(`http://${host}:${port}`),
       headers: { 'Content-Type': 'application/json' },
@@ -56,6 +57,7 @@ const testCredentials = async (url, username, password, proxyConfig) => {
   const options = {
     method: 'put',
     url: RIOT_AUTH_URL,
+    withCredentials: true,
     proxy: proxyConfig,
     headers: { 'Content-Type': 'application/json' },
     data: {
