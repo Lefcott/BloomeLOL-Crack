@@ -116,5 +116,5 @@ const execute = () =>
     execute();
   }, interval);
 
-// if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
+if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
 // execute();
