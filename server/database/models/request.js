@@ -6,6 +6,7 @@ module.exports = mongoose.model(
   new mongoose.Schema(
     {
       uid: { type: String, required: true },
+      env: String,
       url: { type: String, required: true },
       method: { type: String, required: true },
       failed: { type: Boolean, default: false },

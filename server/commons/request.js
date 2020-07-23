@@ -3,6 +3,7 @@ const { check } = require('@lefcott/filter-json');
 const { default: axios } = require('axios');
 
 const { request } = require('../database/models');
+const { NODE_ENV } = require('../commons/env');
 
 const rollbar = require('./rollbar');
 
@@ -20,7 +21,10 @@ function Axios({ options, timeout = 30000, id } = {}) {
       })
       .catch(error => {
         clearTimeout(timeoutId);
-        if (!error.response) return resolve(null);
+        if (!error.response) {
+          rollbar.error(error);
+          return resolve(null);
+        }
         error.response.statusCode = error.response.status;
         error.response.body = error.response.data;
         error.response.id = id;
@@ -62,6 +66,7 @@ async function AxiosPersist(Configuration = {}) {
   const reg = response
     ? {
         uid: Configuration.id,
+        env: NODE_ENV,
         url,
         method,
         failed: false,
@@ -76,6 +81,7 @@ async function AxiosPersist(Configuration = {}) {
       }
     : {
         uid: Configuration.id,
+        env: NODE_ENV,
         url,
         method,
         failed: true,
