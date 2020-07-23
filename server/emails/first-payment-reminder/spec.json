@@ -1,0 +1,10 @@
+{
+  "Name": "required",
+  "Surname": "required",
+  "Services": [
+    {
+      "Name": "required",
+      "PaymentLink": "required"
+    }
+  ]
+}

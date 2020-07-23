@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet" />
+    <style>
+      .button {
+        width: 200px;
+        height: 40px;
+        background-color: rgb(106, 160, 235);
+        border-radius: 12px;
+        color: #fff;
+        cursor: pointer;
+        margin: 20px;
+        padding: 4px;
+        font-weight: bolder;
+      }
+      #container {
+        background-color: #118ab2;
+        border-radius: 12px;
+        width: 100%;
+        height: 100%;
+        padding: 12px;
+        font-family: 'Merriweather', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>{{ data.Name }} {{ data.Surname }}, {{ lang.welcome }}</h1>
+      {{ lang.message }}
+      <br /><br /><br /><a class="button" href="{{ data.VerificationLink }}">{{ lang.complete }}</a>
+    </div>
+  </body>
+</html>

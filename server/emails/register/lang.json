@@ -1,0 +1,14 @@
+{
+  "es": {
+    "welcome": "bienvenido a DancotLL Admin!",
+    "message": "Para completar el registro haz click en el siguiente link:",
+    "messageText": "Para completar el registro abre el siguiente link:",
+    "complete": "Completar Registro"
+  },
+  "en": {
+    "welcome": "welcome to DancotLL Admin!",
+    "message": "In order to complete the register, click the following link:",
+    "messageText": "In order to complete the register, open the link below:",
+    "complete": "Complete Register"
+  }
+}

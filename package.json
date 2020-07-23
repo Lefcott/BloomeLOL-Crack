@@ -1,0 +1,70 @@
+{
+  "name": "dancotll-admin",
+  "version": "1.0.0",
+  "description": "Multi-Tenant service for web products",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "wpack": "webpack-dev-server",
+    "dev": "nodemon app -e env,js,json",
+    "redis": "rdcli -h redis-16193.c11.us-east-1-3.ec2.cloud.redislabs.com -a QU92ikhCaOeA19sIB1ZF86dWWiUlfQyY -p 16193"
+  },
+  "engines": {
+    "node": "14.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lefcott19/BloomeChatbot.git"
+  },
+  "keywords": [
+    "admin"
+  ],
+  "author": "Leandro Cotti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lefcott19/BloomeChatbot/issues"
+  },
+  "homepage": "https://github.com/lefcott19/BloomeChatbot#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "connect-redis": "^4.0.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "moment": "^2.25.3",
+    "mongoose": "^5.9.12",
+    "mongoose-lean-defaults": "^0.4.1",
+    "prettier": "^2.0.5",
+    "redis": "^3.0.2",
+    "rollbar-grouping": "^1.5.5",
+    "throng": "^4.0.0",
+    "url": "^0.11.0",
+    "uuidv4": "^6.0.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^3.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-config-strongloop": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.0",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.0.0",
+    "husky": "^1.2.0",
+    "prettier-eslint": "^8.2.1",
+    "sass": "^1.26.9",
+    "sass-loader": "^9.0.1",
+    "stylelint-config-recommended": "^3.0.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
