@@ -63,10 +63,7 @@ const testCredentials = async (username, password, proxyConfig) => {
 };
 const requestUsers = async (url, state) => {
   // User list request
-  const userResp = await axios({
-    options: { url },
-    persist: true
-  });
+  const userResp = await axios({ options: { url } });
   if (!userResp) return;
   const users = getUsers(userResp.body);
   console.log('Comparing with', url);
@@ -103,6 +100,6 @@ const execute = () =>
     execute();
   }, interval);
 
-if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
+// if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
 // TODO remove
 // execute();
