@@ -21,29 +21,32 @@ const minPageNum = 13;
 const states = urls.map((url, i) => ({ url, pageNum: minPageNum + i, lastUsers: [] }));
 let lastProxy = null;
 
+const authorize = proxy =>
+  // const { host, port } = proxy;
+  axios({
+    options: {
+      method: 'post',
+      url: RIOT_AUTH_URL,
+      // proxy: { host, port, protocol: 'https' },
+      // httpsAgent: new HttpsProxyAgent(`http://${host}:${port}`),
+      headers: { 'Content-Type': 'application/json' },
+      data: {
+        client_id: 'rso-web-client-prod',
+        login_hint: 'las',
+        redirect_uri: 'https://login.leagueoflegends.com/oauth2-callback',
+        response_type: 'code',
+        scope: 'openid',
+        state: uuid()
+      }
+    },
+    persist: true
+  });
 const changeProxy = async () => {
   const proxy = getProxy();
   const { host, port } = getProxyInfo(proxy);
   if (proxy !== lastProxy) {
     lastProxy = proxy;
-    await axios({
-      options: {
-        method: 'post',
-        url: RIOT_AUTH_URL,
-        // proxy: { host, port, protocol: 'https' },
-        httpsAgent: new HttpsProxyAgent(`http://${host}:${port}`),
-        headers: { 'Content-Type': 'application/json' },
-        data: {
-          client_id: 'rso-web-client-prod',
-          login_hint: 'las',
-          redirect_uri: 'https://login.leagueoflegends.com/oauth2-callback',
-          response_type: 'code',
-          scope: 'openid',
-          state: uuid()
-        }
-      },
-      persist: true
-    });
+    await authorize(proxy);
   }
   return { host, port, protocol: 'http' };
 };
@@ -100,6 +103,7 @@ const requestUsers = async (url, state) => {
 const execute = () =>
   setTimeout(async () => {
     const pages = getNNumbers(urls.length - 1);
+    await authorize({});
     for (let i = 0; i < states.length; i += 1) {
       const state = states[i];
       const { pageNum, lastUsers } = states[i];
