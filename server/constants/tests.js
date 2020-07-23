@@ -40,6 +40,6 @@ const tests = [
   user => `${user.replace(/ /g, '_')}12345678`
 ];
 
-const getPasswordSet = (userName = '') => new Set(tests.map(test => test(userName)));
+const getPasswordSet = (userName = '') => [...new Set(tests.map(test => test(userName)))];
 
 module.exports = { getPasswordSet };

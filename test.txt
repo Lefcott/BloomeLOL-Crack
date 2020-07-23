@@ -1,0 +1,2133 @@
+	<!DOCTYPE html>
+	<!--
+	  ,ad8888ba,   88888888ba         ,ad8888ba,    ,ad8888ba,
+	 d8"'    `"8b  88      "8b       d8"'    `"8b  d8"'    `"8b
+	d8'        `8b 88      ,8P      d8'           d8'
+	88          88 88aaaaaa8P'      88            88
+	88          88 88""""""'        88      88888 88      88888
+	Y8,        ,8P 88               Y8,        88 Y8,        88
+	 Y8a.    .a8P  88                Y8a.    .a88  Y8a.    .a88
+	  `"Y8888Y"'   88     dev@op.gg   `"Y88888P"    `"Y88888P"
+
+		 Copyright © 2013-2020 OP.GG. All rights reserved.
+-->
+<html lang="en_US">
+<head>
+	<script>
+		(function(t, l) {
+			try {
+				let w = window,
+					d = document,
+					s = d.createElement("script"),
+					f = d.getElementsByTagName("script")[0];
+				w[t] =
+					w[t] ||
+					function() {
+						(w["_rgea"] = w["_rgea"] || [["uts", new Date()]]).push(
+							Array.prototype.slice.call(arguments)
+						);
+						w.RGEA && w.RGEA.p();
+					};
+				s.type = "text/javascript";
+				s.async = true;
+				s.defer = true;
+				s.src = l;
+				f.parentNode.insertBefore(s, f);
+
+				// 되는 파라미터
+				rgea("propertyId", "RGEA0002-32de3446-a2a6-4f9a-a387-f40138212b2b");
+				rgea("lolpid", 'la2');
+				rgea("anonymous", false);
+			} catch (error) {
+				console.error(error);
+			}
+		})("rgea", "https://static.developer.riotgames.com/js/rgea.min.js");
+	</script>
+	<!-- Venatus Market v3 -->
+	<script>
+		(function(){
+			document.write('<div id="vmv3-ad-manager" style="display:none"></div>');
+			document
+			.getElementById("vmv3-ad-manager")
+					.innerHTML = '<iframe id="vmv3-frm" src="javascript:\'\<html\>\<body\>\</body\>\</html\>\'" width="0" height="0" data-mode="scan" data-site-id="5a8460b346e0fb0001fc3bac" data-content-width="1120" data-top-space="495"></iframe>';
+			var loaderFrame = document.getElementById("vmv3-frm");
+			var loaderFrameWindow = loaderFrame.contentWindow ? loaderFrame.contentWindow : loaderFrame.contentDocument;
+			loaderFrameWindow.document.open();
+			loaderFrameWindow.document.write('<scr' + 'ipt src="//hb.vntsm.com/v3/live/ad-manager.min.js" type="text/javascript" async onerror="window.parent.lifeOnwer();">' + '</scr' + 'ipt>');
+			loaderFrameWindow.document.close();
+		})();
+	</script>
+	<!-- / Venatus Market v3 -->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-WXXJDMH');</script>
+	<!-- End Google Tag Manager -->
+	<meta name="title" content="Summoner&#039;s ladder ranking :: LoL Stats, Record Replay, Database, Guide - OP.GG"/>
+	<meta property="og:title" content="Summoner&#039;s ladder ranking :: LoL Stats, Record Replay, Database, Guide - OP.GG"/>
+	<meta name="description" content="Real-time LoL Stats! Check your Summoner, Live Spectate and using powerful global League of Legends Statistics!"/>
+	<meta property="og:description" content="Real-time LoL Stats! Check your Summoner, Live Spectate and using powerful global League of Legends Statistics!"/>
+	<meta name="keywords" content="League of Legends Stats, LoL Guide, Real-time In Game, Statistics, LoL Spectate, Leaderboards, Chart, Champion Guide, Champion Build, LOLKing, Champion Counter"/>
+	<meta name="theme-color" content="#4285f4">
+	<title>Summoner&#039;s ladder ranking :: LoL Stats, Record Replay, Database, Guide - OP.GG</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+			<meta name="google-play-app" content="app-id=gg.op.lol.android"/>
+				<meta property="fb:app_id" content="677811765617932"/>
+			<meta property="og:site_name" content="OP.GG LAS"/>
+			<meta property="og:type" content="website"/>
+			<meta property="og:image" content="//opgg-static.akamaized.net/icon/reverse.rectangle.png"/>
+		<link rel="canonical" href="http://las.op.gg/ranking/ladder/page=49">
+			<link rel="alternate" hreflang="x-default" href="http://las.op.gg/">
+			<link rel="alternate" hreflang="en-us" href="http://las.op.gg/l=en_US">
+			<link rel="alternate" hreflang="ko-kr" href="http://las.op.gg/l=ko_KR">
+			<link rel="alternate" hreflang="ja" href="http://las.op.gg/l=ja">
+			<link rel="alternate" hreflang="pl" href="http://las.op.gg/l=pl">
+			<link rel="alternate" hreflang="fr" href="http://las.op.gg/l=fr">
+			<link rel="alternate" hreflang="de" href="http://las.op.gg/l=de">
+			<link rel="alternate" hreflang="es" href="http://las.op.gg/l=es">
+			<link rel="alternate" hreflang="nl" href="http://las.op.gg/l=nl">
+			<link rel="alternate" hreflang="da" href="http://las.op.gg/l=da">
+			<link rel="alternate" hreflang="sv" href="http://las.op.gg/l=sv">
+			<link rel="alternate" hreflang="no" href="http://las.op.gg/l=no">
+			<link rel="alternate" hreflang="ru" href="http://las.op.gg/l=ru">
+			<link rel="alternate" hreflang="hu" href="http://las.op.gg/l=hu">
+			<link rel="alternate" hreflang="fi" href="http://las.op.gg/l=fi">
+			<link rel="alternate" hreflang="tr" href="http://las.op.gg/l=tr">
+			<link rel="alternate" hreflang="ro" href="http://las.op.gg/l=ro">
+			<link rel="alternate" hreflang="pt" href="http://las.op.gg/l=pt">
+			<link rel="alternate" hreflang="zh-cn" href="http://las.op.gg/l=zh_CN">
+			<link rel="alternate" hreflang="zh-tw" href="http://las.op.gg/l=zh_TW">
+			<link rel="alternate" hreflang="sr" href="http://las.op.gg/l=sr">
+			<link rel="alternate" hreflang="it" href="http://las.op.gg/l=it">
+			<link rel="alternate" hreflang="th-th" href="http://las.op.gg/l=th_TH">
+			<link rel="alternate" hreflang="vi-vn" href="http://las.op.gg/l=vi_VN">
+		<link rel="icon" type="image/x-icon" href="/favicon.ico?4"/>
+	<link rel="apple-touch-icon-precomposed" href="//opgg-static.akamaized.net/icon/Icon-72.png?v3"/>
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//opgg-static.akamaized.net/icon/Icon-72.png?v3"/>
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//opgg-static.akamaized.net/icon/Icon@2x.png?v3"/>
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="//opgg-static.akamaized.net/icon/Icon-144.png?v3"/>
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<meta name="format-detection" content="telephone=no">
+	<meta name="autocomplete" content="off">
+	<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"VQcEVlFSDBAHXFNWDgMBVg==",licenseKey:"8159f4d5fa",applicationID:"78249260"};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(21),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(22),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(9),t(8),"addEventListener"in window&&t(5),c.xhrWrappable&&t(10),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(9),s=t(8),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(7),"addEventListener"in window&&t(5);var x=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof x&&(this.bstStart=y.now())}),o.on(w,function(t,n){var e=t[0];e instanceof x&&i("bst",[e,n,this.bstStart,y.now()])}),a.on(m,function(t,n,e){this.bstStart=y.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),this.bstType])}),s.on(m,function(){this.bstStart=y.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+p,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){function r(t,n,e){var r=t[n];"function"==typeof r&&(t[n]=function(){var t=i(arguments),n={};o.emit(e+"before-start",[t],n);var a;n[m]&&n[m].dt&&(a=n[m].dt);var s=r.apply(this,t);return o.emit(e+"start",[t,a],s),s.then(function(t){return o.emit(e+"end",[null,t],s),t},function(t){throw o.emit(e+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(22),a=t(21);n.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,n){r(d[h],n,f),r(l[h],n,f)}),r(s,"fetch",c),o.on(c+"end",function(t,n){var e=this;if(n){var r=n.headers.get("content-length");null!==r&&(e.rxSize=r),o.emit(c+"done",[null,n],e)}else o.emit(c+"done",[t],e)}))},{}],7:[function(t,n,e){var r=t("ee").get("history"),o=t("wrap-function")(r);n.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],8:[function(t,n,e){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],9:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],10:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",s)}function i(t){y.push(t),h&&(b?b.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];n.exports=u;var x=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,x),x.prototype=p.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],11:[function(t,n,e){function r(t){if(!i(t))return null;var n=window.NREUM;if(!n.loader_config)return null;var e=(n.loader_config.accountID||"").toString()||null,r=(n.loader_config.agentID||"").toString()||null,s=(n.loader_config.trustKey||"").toString()||null;if(!e||!r)return null;var c=a.generateCatId(),f=a.generateCatId(),u=Date.now(),d=o(c,f,u,e,r,s);return{header:d,guid:c,traceId:f,timestamp:u}}function o(t,n,e,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:n,ti:e}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function i(t){var n=!1,e=!1,r={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(r=NREUM.init.distributed_tracing,e=!!r.enabled),e)if(t.sameOrigin)n=!0;else if(r.allowed_origins instanceof Array)for(var o=0;o<r.allowed_origins.length;o++){var i=s(r.allowed_origins[o]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){n=!0;break}}return e&&n}var a=t(19),s=t(13);n.exports={generateTracePayload:r,shouldGenerateTrace:i}},{}],12:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);n.aborted||(e.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==n.status&&(n.status=0):i(this,t),e.cbTime=this.cbTime,u.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime]))}}function o(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.parsedOrigin=c(n),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,n){t.params.status=n.status;var e=w(n,t.lastSize);if(e&&(t.metrics.rxSize=e),t.sameOrigin){var r=n.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(13),f=t(11).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(17),m=t(16),w=t(14),v=window.XMLHttpRequest;a.features.xhr=!0,t(10),t(6),u.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,n.loadCaptureCalled=!1,t.addEventListener("load",function(e){i(n,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var e=f(this.parsedOrigin);e&&e.header&&(n.setRequestHeader("newrelic",e.header),this.dt=e)}),u.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=m(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<l;s++)n.addEventListener(d[s],this.listener,!1)}),u.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),u.on("xhr-load-added",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,n){var e=""+p(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],n)}),u.on("removeEventListener-end",function(t,n){n instanceof v&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],n)}),u.on("fn-start",function(t,n,e){n instanceof v&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,n){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)}),u.on("fetch-before-start",function(t){var n,e=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var r=f(this.parsedOrigin);if(r&&r.header){var o=r.header;if("string"==typeof t[0]){var i={};for(var a in e)i[a]=e[a];i.headers=new Headers(e.headers||{}),i.headers.set("newrelic",o),this.dt=r,t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&(t[0].headers.append("newrelic",o),this.dt=r)}})}},{}],13:[function(t,n,e){var r={};n.exports=function(t){if(t in r)return r[t];var n=document.createElement("a"),e=window.location,o={};n.href=t,o.port=n.port;var i=n.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=n.hostname||e.hostname,o.pathname=n.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!n.protocol||":"===n.protocol||n.protocol===e.protocol,s=n.hostname===document.domain&&n.port===e.port;return o.sameOrigin=a&&(!n.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],14:[function(t,n,e){function r(t,n){var e=t.responseType;return"json"===e&&null!==n?n:"arraybuffer"===e||"blob"===e||"json"===e?o(t.response):"text"===e||""===e||void 0===e?o(t.responseText):void 0}var o=t(16);n.exports=r},{}],15:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(21),s=t(22),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t,n){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,n])}},{}],16:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],17:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],18:[function(t,n,e){function r(t,n){var e=t.getEntries();e.forEach(function(t){"first-paint"===t.name?c("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&c("timing",["fcp",Math.floor(t.startTime)])})}function o(t,n){var e=t.getEntries();e.length>0&&c("lcp",[e[e.length-1]])}function i(t){if(t instanceof u&&!l){var n,e=Math.round(t.timeStamp);n=e>1e12?Date.now()-e:f.now()-e,l=!0,c("timing",["fi",e,{type:t.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,s,c=t("handle"),f=t("loader"),u=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),s=new PerformanceObserver(o);try{a.observe({entryTypes:["paint"]}),s.observe({entryTypes:["largest-contentful-paint"]})}catch(d){}}if("addEventListener"in document){var l=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(t){document.addEventListener(t,i,!1)})}}},{}],19:[function(t,n,e){function r(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(n=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){function t(){return n?15&n[e++]:16*Math.random()|0}var n=null,e=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&Uint8Array&&(n=r.getRandomValues(new Uint8Array(31)));for(var o=[],i=0;i<16;i++)o.push(t().toString(16));return o.join("")}n.exports={generateUuid:r,generateCatId:o}},{}],20:[function(t,n,e){function r(t,n){if(!o)return!1;if(t!==o)return!1;if(!n)return!0;if(!i)return!1;for(var e=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==e[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}n.exports={agent:o,version:i,match:r}},{}],21:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],22:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],23:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=m(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([x,e,r,a]),a}}function p(t,n){g[t]=m(t).concat(n)}function h(t,n){var e=g[t];if(e)for(var r=0;r<e.length;r++)e[r]===n&&e.splice(r,1)}function m(t){return g[t]||[]}function w(t){return d[t]=d[t]||o(e)}function v(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var g={},y={},x={on:p,addEventListener:p,removeEventListener:h,emit:e,get:w,listeners:m,context:n,buffer:v,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(21),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!E++){var t=b.info=NREUM.info,n=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=p.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(21),u=t("ee"),d=t(20),l=window,p=l.document,h="addEventListener",m="attachEvent",w=l.XMLHttpRequest,v=w&&w.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:w,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var g=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1169.min.js"},x=w&&v&&v[h]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:g,features:{},xhrWrappable:x,userAgent:d};t(15),t(18),p[h]?(p[h]("DOMContentLoaded",i,!1),l[h]("load",r,!1)):(p[m]("onreadystatechange",o),l[m]("onload",r)),c("mark",["firstbyte",s],null,"api");var E=0,O=t(23)},{}],"wrap-function":[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(22),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}]},{},["loader",2,12,4,3]);</script>
+			<link href="//opgg-static.akamaized.net/css3Mobile/common.css?t=1595469828" rel="stylesheet" type="text/css">
+			<link href="//opgg-static.akamaized.net/css3Mobile/forum.css?t=1595469828" rel="stylesheet" type="text/css">
+			<link href="//opgg-static.akamaized.net/css3Mobile/banner.css?t=1595469828" rel="stylesheet" type="text/css">
+			<link href="//opgg-static.akamaized.net/css3Mobile/ranking.css?t=1595469828" rel="stylesheet" type="text/css">
+		<!--[if gt IE 9]><!-->
+		<!--<![endif]-->
+	<script src="//opgg-static.akamaized.net/js3/head.js?2"></script>
+	<script type="text/javascript" src="//opgg-cdn.akamaized.net/moment-2.5.0/moment.js"></script>
+		<script>
+		_i18n.stringList = {"SUMMONER_FAVORITE_LIMIT_EXCEED_IELOW":"Internet Explorer can only save {{limit}} summoners. If you wish to add more favorites, please use Google Chrome or higher version of Internet Explorer.","NOTICE_WONDERINGABOUTMMR":"If you have any questions, please check <a href=\"\/help\/mmr\/\">Help<\/a> first.","MMR_SUBTITLE":"This service estimates your MMR by using OP.GG's algorithm that compares and analyzes the tier information of the summoners you have been matched with.","MMR \uc815\ud655\ub3c4":"MMR Accuracy","\uc11c\ubc84\uc5d0 \ubd80\ud558\uac00 \uc2ec\ud574 \ub370\uc774\ud130\ub97c \uac00\uc838\uc62c \uc218 \uc5c6\uc2b5\ub2c8\ub2e4. \ub2e4\uc2dc \uc2dc\ub3c4\ud574\uc8fc\uc2dc\uae30 \ubc14\ub78d\ub2c8\ub2e4.":"Due to overload on server, loading data has failed. Please try again later.","\uc5bc\ub9c8\ub098 \ubbff\uc744\ub9cc\ud55c\uc9c0\uc758 \uc218\uce58\uc785\ub2c8\ub2e4.":"This is the reliability and accuracy of the numbers.","SPECTATE_SETLOLDIRECTORY_PROMPT":"Please locate your League of Legends directory path where your RADS folder is. (Ex: D:\\Game\\Riot Games\\League of Legends KR)","SPECTATE_SETLOLDIRECTORY_REMOVED":"Directory path setting has been deleted","SPECTATE_SETLOLDIRECTORY_SETTED":"Directory path set to [{{directoryPath}}].","FAVORITE_SUMMONERS_TITLE":"Favorites","CHART_NOTICE_ABOVE_BRONZE":"Summoners above Bronze","CHART_NOTICE_ABOVE_IRON":"Summoners above Iron","CHART_TITLE_PICK_RATE_PER_GAME":"Pick ratio per game","CHART_TITLE_BAN_RATE_PER_GAME":"Ban ratio per game","CHART_TITLE_KDA_PER_GAME":"KDA per game","CHART_TITLE_CS_PER_GAME":"CS per game","CHART_TITLE_AVG_EA_PER_GAME":"Average per game {{count}}","CHART_TITLE_AVG_GOLD_PER_GAME":"Average gold per game: {{gold}}","CHART_TITLE_GOLD_OBTAIN_PER_GAME":"Gold earned per game","CHART_TITLE_WARDS_OBTAIN_PER_GAME":"Wards purchased per game","CHART_TITLE_LEAVE_PER_10K_GAMES":"Leaver count per 10k games","CHART_NOTICE_NO_DATA_THIS_OPTION":"This option does not have any data. Please choose a different option.","CHART_TITLE_ACCUM_PLAY_COUNT":"Total games played","CHART_NOTICE_ORDER_BY_WINRATE_MOUSE_HOVER_TO_SEE_CHAMP_PLAYCOUNT":"They are in order of win ratios, and you can see their number of games played by putting your mouse cursor over them.","CHART_TITLE_PLAY_COUNT":"Games played","CHART_TIERSHARE_LABEL":"Distribution","CHART_TIERSHARE_TOOLTIP":"Percentage in this tier","COMMON_AVERAGE":"Average","STATISTICS_FILTER_CHART_WINRATIO":"Win rate","TIER_RANK_DISTRIBUTION_CHART_TITLE":"League Distribution","RANK":"Ranked","CHART_TITLE_CHAMPION_AVERAGE":"Champion Average","ROLE-TOP":"Top","ROLE-JUNGLE":"Jungle","ROLE-MID":"Middle","ROLE-ADC":"ADC","ROLE-BOTTOM":"Bottom","ROLE-SUPPORT":"Support","PATCH":"Patch","CHAMPION_SKILLVIDEO_ERROR_MESSAGE":"\ud604\uc7ac \ub77c\uc774\uc5c7\uc5d0\uc11c \uc81c\uacf5\ud558\uc9c0 \uc54a\ub294 \uc601\uc0c1\uc785\ub2c8\ub2e4.","CHAMPION_GUIDE_RECOMMEND_LOGIN_EXCEPTION":"You need to login first to upvote.  Would you like to login?","CHAMPION_GUIDE_WRITE_YOUTUBE_LINK_VERIFY_EXCEPTION":"Click \"Apply\" to add a YouTube link.","CHAMPION_GUIDE_WRITE_SKILL_COUNT_EXCEPTION":"Please use all 18 points.","CHAMPION_GUIDE_DELETE_CONFIRM":"Are you sure you want to delete this?","EDITOR_STYLE_BUTTON_H2":"Section Title","EDITOR_STYLE_BUTTON_H3":"Subsection Title","EDITOR_CONTENT_PLACEHOLDER":"Enter text."};
+		moment.diffLocal = Math.round(new Date().getTime() / 1000) - 1595470874 -1;
+		_isMobile = true;
+	</script>
+	<!--[if lt IE 9]>
+	<script src="//opgg-cdn.akamaized.net/jquery-1.11.2/jquery-1.11.2.min.js"></script>
+	<script src="//opgg-cdn.akamaized.net/jquery-migrate-1.2.1/jquery-migrate-1.2.1.min.js"></script>    <![endif]-->
+
+	<!--[if gte IE 9]><!-->
+	<script src="//opgg-cdn.akamaized.net/jquery-2.1.3/jquery-2.1.3.min.js"></script>
+	<!--<![endif]-->
+
+	<!--[if lte IE 9]>
+	<script src="//opgg-cdn.akamaized.net/jquery.placeholder-2.1.2/jquery.placeholder.min.js"></script>
+	<script>
+		$(function(){
+			$("input, textarea").placeholder();
+		});
+	</script>    <![endif]-->
+			<script src="//opgg-cdn.akamaized.net/modernizr-2.7.1/modernizr.js"></script>
+			<script src="//opgg-static.akamaized.net/lib/browserdetect.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/lib/jquery.scrolltofixed-1.0.8-custom.js?1595469828"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.cookie-1.3.1/jquery.cookie.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.tablesorter-2.23.3/jquery.tablesorter.min.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.tablesorter-2.23.3/jquery.tablesorter.widgets.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.jcf-1.1.3/js/jcf.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.jcf-1.1.3/js/jcf.select.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.jcf-1.1.3/js/jcf.radio.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.jcf-1.1.3/js/jcf.checkbox.js"></script>
+			<script src="//opgg-cdn.akamaized.net/jquery.autocomplete-1.3.0/jquery.autocomplete-1.3.0.min.js"></script>
+			<script src="//opgg-cdn.akamaized.net/tipped-4.6.1/js/tipped/tipped.js"></script>
+			<script src="//opgg-static.akamaized.net/js3/common.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/layout.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/sidebar.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/lab.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/mobile.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/detectAds.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/jquery.bxslider.min.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/gnb.js?1595469828"></script>
+			<script src="//opgg-static.akamaized.net/js3/uuid_v1.js?1595469828"></script>
+							
+			<script>
+		$(function(){
+			$('.SearchWrap .SummonerName').on('focus', function(){
+				$(window).scrollTop($(this).closest('.SearchWrap').offset().top - 16);
+				$('.auto-complete').show();
+			});
+
+			var $titleAction = $(".auto-complete__title--action");
+			var autoCompleteContentList = $titleAction.parent();
+			autoCompleteContentList.eq(0).addClass("on");
+			$titleAction.on("click", function(e){
+				var $this = $(this);
+				e.preventDefault();
+				autoCompleteContentList.removeClass("on");
+				$this.parent().addClass("on")
+			});
+
+			var $layoutMenu = $('.layout__menu');
+			var $menu = $('.menu', $layoutMenu), isFixed = false;
+			var isForum = location.pathname.indexOf('forum') !== -1 ? true : false;
+
+			if(!isForum) {
+                $(window).on('scroll', function(){
+                    if($(this).scrollTop() > $layoutMenu.offset().top && !isFixed) {
+                        $menu.addClass('menu--fixed');
+                        isFixed = true;
+                    }
+                    if($(this).scrollTop() <= $layoutMenu.offset().top && isFixed) {
+                        $menu.removeClass('menu--fixed');
+                        isFixed = false;
+                    }
+                });
+			}
+		});
+	</script>
+
+	<script>
+		$(function(){
+			$.OP.GG.tracker.combine.sendEvent(['FB', 'Pixel'], 'Ranking', 'Visit');
+		})
+	</script>
+
+	<script>
+		var waitScrollTimeout = null;
+		$(window).scroll(function(){
+			clearTimeout(waitScrollTimeout);
+			waitScrollTimeout = setTimeout(function(){
+				if ($(window).scrollTop() + $(window).height() > $(document).height() - 1000) {
+					var btn = $(".ranking-table tfoot button"),
+						disabled = btn.attr('disabled');
+
+					if (!btn[0].disabled) btn.click();
+				}
+			}, 50);
+		});
+	</script>
+		<script>
+		var _hmt = _hmt || [];
+		(function(){
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?29884b6641f1b5709cc89a8ce5a99366";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f, b, e, v, n, t, s){
+			if (f.fbq) return;
+			n = f.fbq = function(){
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window,
+			document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '1366379470122349');
+		fbq('track', 'PageView', null);
+	</script>
+	<script>
+		if (Facebook) {
+			Facebook.init(function(FB){
+								FB.AppEvents.logPageView();
+			});
+		}
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	               src="https://www.facebook.com/tr?id=1366379470122349&ev=PageView&noscript=1"
+		/></noscript>
+	<!-- DO NOT MODIFY -->
+	<!-- End Facebook Pixel Code -->
+
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-messaging.js"></script>
+	<script>
+		var fcmRegion = "LAS";
+	</script>
+	<script src="//opgg-static.akamaized.net/js3/fcm.js"></script>
+</head>
+<!--[if IE 7]>
+<body class="ie7 "><![endif]--><!--[if IE 8]>
+<body class="ie8 "><![endif]--><!--[if IE 9]>
+<body class="ie9 "><![endif]--><!--[if gt IE 9]><!-->
+<body class=""><!--<![endif]-->
+		<div class="layout LayoutWrap" id="SideBarToggleElement">
+			<div class="layout__header">
+			<header class="gnb" data-lang="en_US" data-region="LAS" data-ismobile="true">
+  <div class="opgg-header opgg-header--gamg-fn">
+    <div class="opgg-header__gnb">
+      <h1 class="opgg-header__logo">
+        <a class="opgg-header__logo-anchor" href="/">
+                      <img alt="OP.GG" height="16" src="//opgg-static.akamaized.net/images/gnb/svg/00-opgglogo.svg" width="65">
+                  </a>
+      </h1>
+      <nav class="opgg-header__navi">
+        <button class="opgg-header__navi-open" type="button">
+          <span class="opgg-header__navi-thumb"><img alt="League of Legends" src="//opgg-static.akamaized.net/images/gnb/img/icon-navi-lol.png"></span>League of Legends</button>
+        <div class="opgg-header__navi-box">
+          <div class="opgg-header__navi-list opgg-header__navi-list--type-game">
+            <strong class="opgg-header__navi-title">GAME STATS</strong>
+          </div>
+                    <button class="opgg-header__navi-close" type="button"><img alt="닫기" height="24" src="//opgg-static.akamaized.net/images/gnb/svg/icon-close-small.svg" width="24"></button>
+        </div>
+        <div class="layer-dim"></div>
+
+        <div
+          class="opgg-header__navi-noti">        </div>
+      </nav>
+
+      <div class="opgg-header__util">
+        <button class="opgg-header__util-open" type="button"><img alt="" height="24" onclick="$.OP.GG.sidebar.toggle(); return false;" src="//opgg-static.akamaized.net/images/gnb/svg/icon-login.svg" width="24"></button>
+              </div>
+
+      
+      
+    </div>
+      </div>
+</header>
+  <div class="header__search-summoner">
+    <div class="search-summoner SearchWrap">
+      <form action="/summoner/" autocomplete="off">
+        <a class="search-summoner__btn search-summoner__btn--region Region" href="#" onclick="$.OP.GG.layout.region.open(); return false;">
+          <span>LAS</span>
+          <i class='__spSite __spSite-5'></i>
+        </a>
+        <input autocomplete="off" class="search-summoner__input-txt SummonerName" name="userName" type="text">
+        <button class="search-summoner__btn search-summoner__btn--submit Submit">
+          <img src="//opgg-static.akamaized.net/images/gnb/svg/00-icon-gg.svg" height="16">
+        </button>
+      </form>
+    </div>
+  </div>
+  <script>
+$(document).ready(function () {
+  (function () { // tab test
+    $tab = $('[class^="c-tab__"]'),
+    $tabItem = $tab.find('[class*="item"]');
+    $tabItem.on('click', function () {
+      var _this = $(this);
+      className = _this[0].classList[0],
+      activeClass = className + '--is-active';
+      _this.addClass(activeClass).siblings().removeClass(activeClass);
+    });
+
+    // Hide layer-dim self
+    /* var $layerDim = $(".layer-dim");
+      $layerDim.click(function () {
+        $layerDim.hide();
+      }) */
+  })();
+
+  (function () {
+    var $opggNav = $('.opgg-header__navi-box'),
+      $btnNaviOpen = $('.opgg-header__navi-open'),
+      $btnNaviClose = $('.opgg-header__navi-close'),
+      openClass = 'opgg-header__navi-box--is-open';
+
+    $btnNaviOpen.on('click', function () {
+      $opggNav.toggleClass(openClass);
+    })
+    $btnNaviClose.on('click', function () {
+      $opggNav.removeClass(openClass);
+    })
+  })();
+
+  (function () {
+    var $opggUtil = $('.opgg-header__util-box'),
+      $btnUtilOpen = $('.opgg-header__util-open'),
+      $btnUtilClose = $('.opgg-header__util-close'),
+      openClass = 'opgg-header__util-box--is-open';
+
+    $btnUtilOpen.on('click', function () {
+      $opggUtil.toggleClass(openClass);
+    })
+    $btnUtilClose.on('click', function () {
+      $opggUtil.removeClass(openClass);
+    })
+  })();
+});</script>
+		</div>
+		<div class="layout__auto-complete">
+			<div class="auto-complete IndexAutoComplete" style="display: none;">
+	<div class="IndexAutoCompleteContent">
+		<ul>
+			<li class="auto-complete__item">
+				<a class="auto-complete__title--action" href="#">
+					<div class="auto-complete__title auto-complete__title--left">Recent Search</div>
+				</a>
+				<div class="auto-complete__summoner RecentSummonerListWrap">
+					<div class="summoner-list summoner-list--recent SummonerList RecentSummonerList"></div>
+					<div class="summoner-list summoner-list--not-found Message NotFound">
+						<img src="//opgg-static.akamaized.net/css3/sprite/images/icon-info.png" width="16" class="summoner-list__img--warn">
+						There is no summoner you have seen recently.					</div>
+				</div>
+			</li>
+			<li class="auto-complete__item">
+				<a class="auto-complete__title--action" href="#">
+					<div class="auto-complete__title auto-complete__title--right">Favorites</div>
+				</a>
+				<div class="auto-complete__summoner FavoriteSummonerListWrap">
+					<div class="summoner-list summoner-list--favorite SummonerList FavoriteSummonerList"></div>
+					<div class="summoner-list summoner-list--not-found Message NotFound">
+						<img src="//opgg-static.akamaized.net/css3/sprite/images/icon-info.png" width="16" class="summoner-list__img--warn">
+						Add your <i class='__spSite __spSite-100'></i> favorite summoner for easy updates on the latest stats.
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<button class="CloseButton" onclick="$(this).closest('.auto-complete').hide();">Close</button>
+</div>		</div>
+		<div class="layout__menu">
+			<script>
+	// 임시 스크립트
+	var confirmForcePC = function(obj){
+		var isShowMessage = $(obj).data('isShowMessage');
+		if (isShowMessage == '1') {
+			$(obj).data('isShowMessage', '0');
+			Tipped.get(obj).remove();
+		} else {
+			$(obj).data('isShowMessage', '1');
+			var message = "It is only visible to the PC version. Touch it!";
+			var tp = Tipped.create(obj, message, {
+				radius: false,
+				maxWidth: 320,
+				position: 'bottomLeft',
+				fadeIn: 0,
+				fadeOut: 0
+			}).show();
+			return false;
+		}
+	};
+</script>
+<div class="menu">
+	<ul>
+					<li class="menu__normal ">
+				<h2 class="menu__title">
+					<a href="/champion/statistics" class="" style="" onclick="">
+												Champions
+																	</a>
+				</h2>
+
+							</li>
+					<li class="menu__normal ">
+				<h2 class="menu__title">
+					<a href="/statistics/" class="" style="" onclick="">
+												Stats
+																	</a>
+				</h2>
+
+							</li>
+					<li class="menu__normal menu__normal--active">
+				<h2 class="menu__title">
+					<a href="/ranking/" class="" style="" onclick="">
+												Leaderboards
+																	</a>
+				</h2>
+
+							</li>
+					<li class="menu__normal ">
+				<h2 class="menu__title">
+					<a href="/extension/" class="" style="" onclick="">
+												Extension
+																	</a>
+				</h2>
+
+							</li>
+				
+																																																																																																																																																																																																															</ul>
+</div>
+		</div>
+				<div class="layout__content">
+		<div class="content">
+			
+			<div class="life-owner LifeOwnerGlobal320">
+			<!-- OP.GG 2 - 300x250 Static Mobile (5d3058648a818f4d50edec4d) - 300x250 - Place in <BODY> of page where ad should appear -->
+		<div class="vm-placement" data-id="5d3058648a818f4d50edec4d"></div>
+		<!-- / OP.GG 2 - 300x250 Static Mobile (5d3058648a818f4d50edec4d) -->
+		</div>
+		<div class="PageMenuWrap">
+		<ol class="MenuList">
+			<li class="Item active">
+				<a href="/ranking/ladder" class="Link">Leaderboards</a>
+			</li>
+			<li class="Item ">
+				<a href="/ranking/champions" class="Link">Champions</a>
+			</li>
+			<li class="Item ">
+				<a href="/ranking/level" class="Link">Level</a>
+			</li>
+		</ol>
+	</div>
+
+	<div class="LadderRankingSearch">
+		<form class="FormItem" action="/ranking/ladder/" method="get">
+			<div class="InputText">
+				<input type="text" class="Input" placeholder="Summoner Name" name="summonerName" value="">
+			</div>
+			<button class="Button SemiRound Blue" type="submit"><i class='__spSite __spSite-105'></i></button>
+		</form>
+	</div>
+			<div class="PageDescription">
+			<span class="Text">There are currently 747,257 summoners on Summoner&#039;s Rift</span>
+		</div>
+		<div class="Content">
+					<table class="ranking-table ranking-table--ladder">
+				<colgroup>
+					<col width="45">
+					<col>
+					<col width="100">
+				</colgroup>
+				<thead>
+					<tr>
+						<th class="ranking-table__header ranking-table__header--level">#</th>
+						<th class="ranking-table__header ranking-table__header--summoner">Summoners</th>
+						<th class="ranking-table__header ranking-table__header--tier">
+							<span>Tier</span> <span>LP</span>
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+			<tr class="ranking-table__row  " id="summoner-524350">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4801
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=In+Pak+we+Trust">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1044.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>In Pak we Trust</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-69736">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4802
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Min%C3%B8s+de+Gri%C6%92%C6%92%C3%B8">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon685.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Minøs de Griƒƒø</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-7961967">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4803
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=FUTURO+KINE+">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4568.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>FUTURO KINE </span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-5342542">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4804
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=shadowstar12">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3426.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>shadowstar12</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-7270880">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4805
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=dopaminemodel">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon2072.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>dopaminemodel</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2604151">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4806
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Zalvagzk">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1389.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Zalvagzk</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-209695">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4807
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Skr%C3%AFm">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3184.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Skrïm</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1600495">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4808
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=TigreByakko">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3156.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>TigreByakko</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-601616">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4809
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Asel">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon6.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Asel</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-44976">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4810
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Eminencia">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3898.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Eminencia</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-17565418">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4811
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Emilio+UwU">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4491.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Emilio UwU</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-12980305">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4812
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=NIGHTMARE+LH">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon843.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>NIGHTMARE LH</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-113712">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4813
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Nash%C3%B8ff">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4574.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Nashøff</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-875140">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4814
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=SAO+la+wea+mala">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3790.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>SAO la wea mala</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4050463">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4815
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Rhaast+Nordico">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1641.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Rhaast Nordico</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4301459">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4816
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=GOSU+NOVATO">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3078.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>GOSU NOVATO</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-6364325">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4817
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=%C3%86T+Rinzou">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3868.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>ÆT Rinzou</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-299304">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4818
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Luloo">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4355.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Luloo</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-11262276">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4819
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=A2c6uS36r4">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3898.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>A2c6uS36r4</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-12933053">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4820
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Koal4">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon29.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Koal4</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-96430">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4821
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=FK+THIS+GAME">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon23.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>FK THIS GAME</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-187451">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4822
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Just+One+Hand+">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon518.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Just One Hand </span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-93049">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4823
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=kelf">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4573.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>kelf</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1271662">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4824
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=SyvG">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4409.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>SyvG</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1883214">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4825
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=mandibulin180">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4533.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>mandibulin180</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2811615">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4826
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Zeitung">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon663.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Zeitung</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-462989">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4827
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=uf0">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4496.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>uf0</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-8733194">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4828
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=M%C3%ADshi">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3838.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Míshi</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4503778">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4829
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=PYKE+COMUNlSTA">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4065.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>PYKE COMUNlSTA</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-19999941">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4830
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=ninacele">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3174.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>ninacele</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-17221943">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4831
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Rodry">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3628.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Rodry</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-15710843">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4832
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=+M%C3%A5uri">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4022.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span> Måuri</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1714011">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4833
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=God+ArAmIx">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4413.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>God ArAmIx</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-6030453">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4834
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=SpeakerSL">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3459.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>SpeakerSL</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-5153266">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4835
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Z%C3%ABn">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3889.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Zën</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-117293">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4836
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=TSP+FranH">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4414.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>TSP FranH</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-3925418">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4837
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=PowerRex">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3587.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>PowerRex</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-12050537">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4838
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=%C5%A0u%C3%A1re%C5%BC">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4414.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Šuáreż</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-564351">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4839
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Elzo+Quete">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4561.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Elzo Quete</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1558596">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4840
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Naromaya">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Naromaya</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-6142599">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4841
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=His+Queen+XaYu">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4548.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>His Queen XaYu</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-6821294">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4842
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=G++U++E++%C3%9F++%C3%98">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3860.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>G  U  E  ß  Ø</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-19133830">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4843
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Gabini">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon558.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Gabini</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-13472525">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4844
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Winners+Queue">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1152.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Winners Queue</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-62608">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4845
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=second+round">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon589.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>second round</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2634088">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4846
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=frost+kat">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3583.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>frost kat</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-209465">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4847
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Bucco+Covid+19">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3205.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Bucco Covid 19</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-248405">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4848
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=queso85">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon538.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>queso85</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2421838">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4849
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=tjX+Strikeeeee">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4589.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>tjX Strikeeeee</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2790392">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4850
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=4+Leaf+Clover">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3230.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>4 Leaf Clover</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-132434">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4851
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=LegendsNeverFish">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon539.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>LegendsNeverFish</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4973415">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4852
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=TheRealSlimShady">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4294.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>TheRealSlimShady</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-197307">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4853
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=pudGGesinho">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon581.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>pudGGesinho</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1145151">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4854
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=End+Credits">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3886.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>End Credits</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-173742">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4855
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=MIAU+H%C3%A4des">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3456.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>MIAU Hädes</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-20025901">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4856
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=buuuuuuuullaaaaa">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>buuuuuuuullaaaaa</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4568658">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4857
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Rewot09">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4027.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Rewot09</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-104678">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4858
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Draconis">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3505.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Draconis</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2170312">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4859
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=IIKingbearII">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4568.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>IIKingbearII</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-80712">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4860
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Ch%C3%B8pen">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3462.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Chøpen</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-251741">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4861
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=PLS+InSec">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3478.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>PLS InSec</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-5340209">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4862
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=R%C2%AAmaha+M1">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon8.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Rªmaha M1</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-8530458">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4863
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=BiggestRightArm">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4057.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>BiggestRightArm</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-123172">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4864
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Nikoqaz">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4418.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Nikoqaz</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-562241">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4865
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Raiden">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4417.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Raiden</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1875974">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4866
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=TL+Regikazih">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4611.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>TL Regikazih</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1021381">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4867
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Khantz">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1639.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Khantz</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4062009">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4868
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Dra+Lissa+Ann">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3015.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Dra Lissa Ann</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-189134">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4869
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=55+Kai">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4412.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>55 Kai</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2306734">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4870
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=TwTV+DangoBiceps">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4379.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>TwTV DangoBiceps</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1115573">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4871
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Liquid+EmoTioN">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3795.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Liquid EmoTioN</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1164053">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4872
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Calamidadl">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3819.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Calamidadl</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-121364">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4873
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Tottilt">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1515.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Tottilt</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4060187">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4874
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Dierol">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1439.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Dierol</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-5090126">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4875
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=D+Russ">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon758.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>D Russ</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-14611698">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4876
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Klg+Pedrostito">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3426.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Klg Pedrostito</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-4303086">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4877
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Star+Z">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4593.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Star Z</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-153712">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4878
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=KTNightmare">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3545.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>KTNightmare</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1401230">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4879
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Topardo">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3859.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Topardo</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2270233">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4880
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=IKkuTo">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4021.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>IKkuTo</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-5874059">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4881
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Maestro+A">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4244.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Maestro A</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-85750">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4882
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=GeneralManTkilla">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1439.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>GeneralManTkilla</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1810075">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4883
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=AmiensuS">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1588.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>AmiensuS</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-20218914">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4884
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=GO%C5%81PEO+MUJERES">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon28.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>GOŁPEO MUJERES</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-12050734">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4885
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=PDF+a+Word">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon691.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>PDF a Word</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-19041743">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4886
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=C9+Maver">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon29.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>C9 Maver</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-10932243">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4887
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=MR+OziPuzi">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4568.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>MR OziPuzi</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-360700">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4888
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=FakE">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon553.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>FakE</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-62508">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4889
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=MattVader">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3868.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>MattVader</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-17644973">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4890
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=SirDrak">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3546.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>SirDrak</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-167395">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4891
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Judar">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon782.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Judar</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-3290423">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4892
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=ARS+Yoshino">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4406.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>ARS Yoshino</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-7301919">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4893
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Congelao+perkin">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon1387.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Congelao perkin</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-61478">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4894
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=SENTADO+DE+PANA">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4574.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>SENTADO DE PANA</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-722682">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4895
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Cool+%C3%90emon">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4510.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Cool Ðemon</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-12210739">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4896
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Apdo+01">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4027.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Apdo 01</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-71959">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4897
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Jeatz">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4597.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Jeatz</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-2501311">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4898
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=XxFrodioxX">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3426.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>XxFrodioxX</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-74857">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4899
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=Homi+Womi">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon4201.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>Homi Womi</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+			<tr class="ranking-table__row  " id="summoner-1164693">
+						<td class="ranking-table__cell ranking-table__cell--rank">
+				4900
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--summoner">
+				<a href="//las.op.gg/summoner/userName=TUMAMIEN4">
+					<img src="//opgg-static.akamaized.net/images/profile_icons/profileIcon3381.jpg?image=q_auto,c_scale,w_38&amp;v=1518361200" onerror="this.src='//opgg-static.akamaized.net/images/profile_icons/profileIcondefault.jpg';">
+					<span>TUMAMIEN4</span> </a>
+			</td>
+			<td class="ranking-table__cell ranking-table__cell--tier">
+									<div class="tier tier--Diamond">D3</div>
+																									</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<td class="ranking-table__cell ranking-table__cell--button" colspan="3">
+				<button onclick="$.OP.GG.ranking.loadMore(this, '50'); return false;">Show More</button>
+			</td>
+		</tr>
+	</tfoot>
+			</table>
+			</div>
+			</div>
+	</div>
+			<div class="layout__footer">
+			<div class="footer">
+			<a href="javascript:$.OP.GG.util.forceDesktopViewToggle();" class="footer__link footer__link--view-pc">Show version for PC</a>
+		<div class="footer__link-wrapper">
+		<div class="footer__link-wrapper__item">
+			<a href="/about/" class="footer__link footer__link--normal">About OP.GG</a>
+		</div>
+		<div class="footer__link-wrapper__item">
+			<a href="/help/" class="footer__link footer__link--normal">Help</a>
+		</div>
+		<div class="footer__link-wrapper__item">
+			<a href="mailto:service@op.gg" class="footer__link footer__link--normal">Feedback</a>
+		</div>
+	</div>
+	<a href="#" onclick="$.OP.GG.layout.language.open('Bottom'); return false;" class="footer__link footer__link--language">
+		English
+		<i class='__spSite __spSite-5'></i>
+	</a>
+	<div class="footer__copyright">
+		© 2012-2020
+		OP.GG. OP.GG isn’t endorsed by Riot Games and doesn’t reflect the views or opinions of Riot Games or anyone officially involved in producing or managing
+		League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+	</div>
+	<div class="footer__sns">
+		<a href="http://twitter.com/globalopgg" class="footer__link" title="Twitter" target="_blank"><img src="//opgg-static.akamaized.net/images/site/sns/twitter.48x48.png" width="24"></a>
+		<a href="https://www.instagram.com/opgginc/" class="footer__link" title="Instagram" target="_blank"><img src="//opgg-static.akamaized.net/images/site/sns/instagram.48x48.png" width="24"></a>
+					<a href="https://www.facebook.com/OPGGLatin" class="footer__link" title="Facebook" target="_blank"><img src="//opgg-static.akamaized.net/images/site/sns/facebook.48x48.png" width="24"></a>
+			</div>
+</div>		</div>
+		<div class="sidebar-wrapper">
+  <div class="sidebar-wrapper__background" onclick="$.OP.GG.sidebar.toggle(); return false;"></div>
+  <div class="sidebar">
+          <div
+        class="sidebar__summoner-info">
+
+                <b></b>
+        <span></span>
+      </div>
+                    <div class="sidebar__community-info Content">
+                                                                                                                                            <div class="info-setting"> <div class="info-setting__layout info-setting__layout--region-lanaguage">
+          <div class="info-setting__action">
+            <a class="info-setting__link info-setting__link--line-padding" href="#" onclick="$.OP.GG.sidebar.toggle(); $.OP.GG.layout.region.open(); return true;">
+              <div class="info-setting__sub-text">Region</div>
+              <div class="info-setting__text">LAS</div>
+              <img src="//opgg-static.akamaized.net/css3/sprite/images/img-sidebar-btn-more.png" width="22">
+            </a>
+          </div>
+          <div class="info-setting__action">
+            <a class="info-setting__link info-setting__link--line-padding" href="#" onclick="$.OP.GG.sidebar.toggle(); $.OP.GG.layout.language.open('Top'); return true;">
+              <div class="info-setting__sub-text">Language</div>
+              <div class="info-setting__text">English</div>
+              <img src="//opgg-static.akamaized.net/css3/sprite/images/img-sidebar-btn-more.png" width="22">
+            </a>
+          </div>
+        </div>
+              </div>
+    </div>
+  </div>
+</div></div>
+		<div class="app--install--mini--container">
+  <div class="content" onclick="mobile.goToMarket()">
+    <span class="text">
+      Download OP.GG app    </span>
+    <img class="icon" id="appInstallMiniCloseIcon" src="//opgg-static.akamaized.net/images/mobileAppInstall/btn-closead.png"/>
+  </div>
+</div>
+<script>
+  (function () {
+    var miniBanner = document.querySelector(".app--install--mini--container");
+    document.getElementById("appInstallMiniCloseIcon").addEventListener("click", hideBanner);
+    function hideBanner() {
+      miniBanner.style.display = "none";
+      if (!$.cookie("closedMobileAppInstallMini")) {
+
+        $.cookie("closedMobileAppInstallMini", "true", {
+          path: "/",
+          expires: 9999
+        });
+      }
+      event.stopPropagation();
+    }
+    window.onload = function () {
+      if (!$.cookie("closedMobileAppInstallMini")) {
+        miniBanner.className += " animation";
+      }
+    }
+  })()
+</script>	<div class="mobile-app-install">
+  <div class="mobile-app-install__inner">
+    <div class="title">
+      Discover OP.GG in mobile app</div>
+    <div class="description">
+      It would be better than thought</div>
+    <div class="feature">
+      <div class="feature__item">
+        <img class="first" src="//opgg-static.akamaized.net/images/mobileAppInstall/img-appad-01@2x.png"/>
+        <div class="text">
+          <div class="title">
+            Champion Scorecard          </div>
+          <div class="description">
+            Find out how well you are good at champion          </div>
+        </div>
+      </div>
+      <div class="feature__item">
+        <img class="second" src="//opgg-static.akamaized.net/images/mobileAppInstall/img-appad-02@2x.png"/>
+        <div class="text">
+          <div class="title">
+            Changed in-game analysis          </div>
+          <div class="description">
+            Make a winning strategy while gaming          </div>
+        </div>
+      </div>
+    </div>
+    <div class="action--container">
+      <div class="close--button" id="appInstallCloseButton">
+        <img class="icon" id="appInstallCloseIcon" src="//opgg-static.akamaized.net/images/mobileAppInstall/icon-closead.png"/>
+      </div>
+      <div class="download--button" onclick="mobile.goToMarket()">
+        Download OP.GG app      </div>
+    </div>
+  </div>
+</div>
+<script>
+  (function () {
+    var banner = document.querySelector(".mobile-app-install");
+    document.getElementById("appInstallCloseButton").addEventListener("click", function () {
+      if (!$.cookie("closedMobileAppInstall")) {
+        banner.style.display = "none";
+        $.cookie("closedMobileAppInstall", "true", {
+          path: "/",
+          expires: 9999
+        });
+        document.querySelector(".app--install--mini--container").className += " animation";
+      }
+    });
+    window.onload = function () {
+      if (!$.cookie("closedMobileAppInstall")) {
+        banner.className += " animation";
+      } else if (!$.cookie("closedMobileAppInstallMini")) {
+        document.querySelector(".app--install--mini--container").className += " animation";
+      }
+    }
+  })()
+</script>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXXJDMH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37377845-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-37377845-1');
+	gtag('config', 'UA-140073778-1');
+</script>
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+	if (!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "55c48ac9e22bec";
+	wcs_do();
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"8159f4d5fa","applicationID":"78249260","transactionName":"b1ZTYBdWWxVWUUZcV1YcckEWQ1oLGEBTW1NRXVYbCVZRAlJAHQ==","queueTime":0,"applicationTime":171,"atts":"QxFQFl9MSBs=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+					
+	
+	<script>
+		window.lifeOnwer = function(){
+			this.randAdIdx = '2126757624';
+			this.showAd = function(element, size){
+				if (size === "skyscraper") {
+					this.showAdSkyscraper();
+					return;
+				}
+				element.innerHTML = this.getAdHTML(size);
+				element.classList.remove('vm-placement');
+			};
+
+			this.showAdSkyscraper = function(){
+				if (this.getMobileOS() !== "unknown") {
+					return;
+				}
+
+				var elementLeft = document.createElement("div");
+				elementLeft.innerHTML = this.getAdHTML("skyscraper");
+				elementLeft.setAttribute('style', 'position: absolute; left: 50%; top: 106px; margin-left: -725px;');
+				document.body.appendChild(elementLeft);
+
+				var elementRight = document.createElement("div");
+				elementRight.innerHTML = this.getAdHTML("skyscraper");
+				elementRight.setAttribute('style', 'position: absolute; right: 50%; top: 106px; margin-right: -725px;');
+				document.body.appendChild(elementRight);
+
+				$(elementRight).scrollToFixed({
+					marginTop: 60
+				});
+			};
+
+			this.getAdHTML = function(size){
+				var lang = (this.getLang() === 'ko_KR' ? 'ko' : 'en');
+				return "<a href=\"" + this.getAdLink(this.adIndex) + "\" target=\"_blank\" class=\"lifeOnwer-" + randAdIdx + "\">" +
+					"<img src='//opgg-static.akamaized.net/images/lifeowner/opgg/" + lang + "/" + adIndex + "-" + size + ".png'>" +
+					"</a>";
+			};
+			this.getAdLink = function(adIndex){
+				var linkKey = this.getMobileOS() + '-' + adIndex;
+				switch (linkKey) {
+					case "Android-1":
+						return "market://details?id=gg.op.lol.android&referrer=utm_source%3Dopgg%26utm_medium%3Dbanner01%26utm_content%3Dapp";
+					case "Android-2":
+						return "market://details?id=gg.op.lol.android&referrer=utm_source%3Dopgg%26utm_medium%3Dbanner02%26utm_content%3Dlol";
+					case "Android-3":
+						return "market://details?id=gg.op.lol.android&referrer=utm_source%3Dopgg%26utm_medium%3banner03%26utm_content%3Dpubg";
+					case "unknown-1":
+						return "https://play.google.com/store/apps/details?id=gg.op.lol.android&referrer=utm_source%3Dopgg%26utm_medium%3Dbanner01%26utm_content%3Dapp";
+					case "unknown-2":
+						return "https://play.google.com/store/apps/details?id=gg.op.lol.android&referrer=utm_source%3Dopgg%26utm_medium%3Dbanner02%26utm_content%3Dlol";
+					case "unknown-3":
+						return "https://play.google.com/store/apps/details?id=gg.op.lol.android&referrer=utm_source%3Dopgg%26utm_medium%3Dbanner03%26utm_content%3Dpubg";
+					default:
+						return "itms-apps://itunes.apple.com/kr/app/apple-store/id605722237";
+				}
+			};
+			this.getMobileOS = function(){
+				var userAgent = navigator.userAgent || navigator.vendor;
+
+				if (/android/i.test(userAgent)) {
+					return "Android";
+				}
+
+				if (/iPad|iPhone|iPod/.test(userAgent)) {
+					return "iOS";
+				}
+
+				return "unknown";
+			};
+			this.getLang = function(){
+				return document.documentElement.lang || "en";
+			};
+
+			this.slots = [
+				{
+					'id': '5a84644f46e0fb0001d74d3c',
+					'size': '970x90'
+				},
+				{
+					'id': '5a84640c46e0fb0001fc3bb0',
+					'size': '300x250'
+				},
+				{
+					'id': '5a8462a746e0fb0001bf35aa',
+					'size': 'skyscraper'
+				},
+			];
+			this.getCookie = function(name){
+				var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+				if (match) return match[2];
+			};
+			this.bindClickEvent = function(){
+				$(".lifeOnwer-" + randAdIdx).click(function(evt){
+					$.OP.GG.tracker.combine.sendEvent(['FB', 'Pixel'], 'Opgg', 'ClickAd', {
+						Location: location_,
+						subLocation: subLocation,
+						BannerType: adIndex
+					});
+				});
+			};
+
+			this.adIndex = Math.floor(Math.random() * (this.getMobileOS() === "iOS" ? 2 : 3)) + 1;
+			this.location_ = "ranking";
+			this.subLocation = "ladder";
+
+
+			slots.forEach(function(slot){
+				if (self.getMobileOS() === "unknown" && slot.size === "300x250") {
+					return;
+				}
+				var element = document.querySelector('.vm-placement[data-id="' + slot.id + '"]');
+				if (element) {
+					self.showAd(element, slot.size);
+				}
+			});
+			this.bindClickEvent();
+		};
+	</script>
+	<!-- Venatus Market Placement (OP.GG 2 - Rich Media  - 1x1) -->
+	<div class="vm-placement" data-id="5a8462a746e0fb0001bf35aa" data-content-width="1120" data-top-space="106" style="display:none"></div>
+	<!-- / Venatus Market Placement (OP.GG 2 - Rich Media  - 1x1) -->
+
+
+<script type='text/javascript'>
+$(document).ready(function(){
+	$('a[href="#"]').click(function(e) {
+		e.preventDefault();
+	});
+});
+</script>
+</body>
+</html>
