@@ -2,7 +2,7 @@
 const { uuid } = require('uuidv4');
 const HttpsProxyAgent = require('https-proxy-agent');
 
-const { NODE_ENV, RIOT_AUTH_URL } = require('../commons/env');
+const { NODE_ENV, RIOT_AUTH_URL, TEST_INTERVAL } = require('../commons/env');
 const { getNNumbers } = require('../commons/numbers');
 const { haveSameElements } = require('../commons/arrays');
 const rollbar = require('../commons/rollbar');
@@ -15,7 +15,7 @@ const { account } = require('../database/models');
 
 const { getUsers } = require('./get_users');
 
-const interval = 10000;
+const interval = +TEST_INTERVAL;
 const requestInterval = 1000;
 const minPageNum = 13;
 const states = urls.map((url, i) => ({ url, pageNum: minPageNum + i, lastUsers: [] }));
