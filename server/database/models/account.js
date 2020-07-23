@@ -1,19 +1,14 @@
 const mongoose = require('mongoose');
 
 module.exports = mongoose.model(
-  'User',
+  'Account',
   mongoose.Schema(
     {
-      Email: { type: String, required: true },
-      Phone: { type: String, required: true },
-      ConfirmID: String,
-      Confirmed: { type: Boolean, default: false },
-      Name: { type: String, required: true },
-      Surname: String,
+      UserName: { type: String, required: true },
       Password: { type: String, required: true },
-      Language: String,
-      ProductIDs: [String]
+      Level: String,
+      Sold: { type: Boolean, default: false }
     },
-    { collection: 'Users' }
+    { collection: 'Accounts' }
   )
 );

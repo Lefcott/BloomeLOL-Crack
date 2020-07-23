@@ -1,2 +1,0 @@
-{{ data.Name }} {{ data.Surname }}, {{ lang.welcome }}
-{{ data.VerificationLink }}

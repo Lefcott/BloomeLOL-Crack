@@ -1,4 +1,4 @@
-const { NODE_ENV, MERCADO_PAGO_TOKEN } = require('../commons/env');
+const { NODE_ENV } = require('../commons/env');
 
 const interval = 10000;
 
