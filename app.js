@@ -9,7 +9,6 @@ const start = threadID => {
   require('./server/routes/schemas');
   require('./server/database');
   require('./server/tasks');
-  require('./m');
 };
 
 if (process.env.MULTIPLE_THREADS.toLowerCase() === 'true') throng(threads, start);
