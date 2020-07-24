@@ -19,6 +19,7 @@ const sessionMiddleware = (...args) => {
   args[0].session = {};
   args[2]();
 };
+app.get('/:test', (req, res) => res.send({ params: req.params, headers: req.headers }));
 
 const router = express.Router();
 app.disable('x-powered-by');

@@ -14,10 +14,8 @@ function Axios({ options, timeout = 30000, id } = {}) {
     axios(options)
       .then(response => {
         clearTimeout(timeoutId);
-        response.statusCode = response.status;
-        response.body = response.data;
-        response.id = id;
-        resolve(response);
+        const { status, data: body, headers } = response;
+        resolve({ status, body, headers, id });
       })
       .catch(error => {
         clearTimeout(timeoutId);
@@ -25,10 +23,8 @@ function Axios({ options, timeout = 30000, id } = {}) {
           rollbar.error(error);
           return resolve(null);
         }
-        error.response.statusCode = error.response.status;
-        error.response.body = error.response.data;
-        error.response.id = id;
-        resolve(error.response);
+        const { status, data: body, headers } = error.response;
+        resolve({ status, body, headers, id });
       });
   });
 }
