@@ -1,44 +1,12 @@
-const { axios } = require('./server/commons/request');
+const { axios } = require('../commons/request');
+const { getCookies, setCookies } = require('../commons/cookies');
 
-const getCookies = (cArray = []) => {
-  if (!cArray) cArray = [];
-  let cookies = '';
-  for (let i = 0; i < cArray.length; i += 1) {
-    const cookie = cArray[i];
-    let endIndex = cookie.indexOf(' ');
-    endIndex = endIndex === -1 ? cookie.length : endIndex;
-    cookies += `${i > 0 ? ' ' : ''}${cookie.substr(0, endIndex)}`;
-  }
-  return cookies;
-};
-const jsonCookie = cookie => {
-  const output = {};
-  cookie.split(/\s*;\s*/).forEach(pair => {
-    pair = pair.split(/\s*=\s*/);
-    if (!pair[0]) return;
-    output[pair[0]] = pair.splice(1).join('=');
-  });
-  return output;
-};
-const strCookie = cookie => {
-  const keys = Object.keys(cookie);
-  let str = '';
-  for (let i = 0; i < keys.length; i += 1) str += `${i === 0 ? '' : ' '}${keys[i]}=${cookie[keys[i]]};`;
-  return str;
-};
-const setCookies = (cookie, set) => {
-  cookie = jsonCookie(cookie);
-  set = jsonCookie(set);
-  cookie = { ...cookie, ...set };
-  cookie = strCookie(cookie);
-  console.log('Give Cookie', cookie);
-  return cookie;
-};
 const userAgent =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36';
 const baseCookies =
   '__cfduid=df9a4b85e6c0ae707749820f51f81a7221595563294; clid=uw1; _ga=GA1.2.1373131905.1595563297; _gid=GA1.2.1531616600.1595563297; did=56492b45c0bb4c3da6f80a4b7d1cc432; __cf_bm=8afb464032602502f67f342b026ed7d381f55826-1595573964-1800-AbgeSQbY2XHyr8EzykTJbYBRhiC01GI7k17iX4ipZo3CZAPruZda+O3jvXS839XNp3EMqWHZP6eWvxecjvNJa2E=; asid=FfFmzBuzufudetlELO8OJgr7rI21tDD-rzon0hyu-IU.9v63ybRHl0M%3D;';
-(async () => {
+
+const areCredentialsOk = async (username, password) => {
   let cookies = baseCookies;
   let addCookies = '';
   const options = {
@@ -65,9 +33,8 @@ const baseCookies =
       ui_locales: 'en'
     }
   };
-  console.log('options1_5', options);
   const resp1_5 = await axios({ options });
-  console.log('resp1_5', resp1_5);
+  if (!resp1_5) return false;
   addCookies = getCookies(resp1_5.headers['set-cookie']);
   cookies = setCookies(cookies, addCookies);
   const resp2 = await axios({
@@ -86,11 +53,15 @@ const baseCookies =
       },
       data: {
         language: 'es-ES',
-        password: 'lkkddkj',
+        password,
         remember: false,
         type: 'auth',
-        username: 'ssiirfd'
+        username
       }
     }
   });
-})();
+  if (!resp2 || resp2.status < 200 || resp2.status > 299) return false;
+  return !resp2.body.error;
+};
+
+module.exports = { areCredentialsOk };
