@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
+const leanDefaults = require('mongoose-lean-defaults');
 
 module.exports = mongoose.model(
   'Account',
-  mongoose.Schema(
+  new mongoose.Schema(
     {
       UserName: { type: String, required: true },
       Password: { type: String, required: true },
@@ -11,5 +12,5 @@ module.exports = mongoose.model(
       Sold: { type: Boolean, default: false }
     },
     { collection: 'Accounts' }
-  )
+  ).plugin(leanDefaults)
 );
