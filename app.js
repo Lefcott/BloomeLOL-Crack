@@ -1,5 +1,6 @@
 const throng = require('throng');
 require('./server/commons/env');
+require('./vpn');
 
 const threads = +process.env.THREADS;
 
