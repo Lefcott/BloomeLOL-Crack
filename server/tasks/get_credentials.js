@@ -13,7 +13,6 @@ const lastUserLists = {};
  * @returns {Promise<{ url: string, pairs: { username: string, password: string }[] }>}
  */
 const getCredentials = async Server => {
-  console.log('getCredentials');
   if (!lastUserLists[Server._id]) lastUserLists[Server._id] = [];
   const url = Server.Url.replace(/\{\{PageNumber\}\}/g, Server.PageNumber);
   const userResp = await axios({ options: { url } });
@@ -22,8 +21,7 @@ const getCredentials = async Server => {
   if (users.length && haveSameElements(users, lastUserLists[Server._id])) {
     console.log('Repeated User Elements', users);
     Server.PageNumber = Server.InitialPageNumber;
-    // TODO discomment
-    // server.update({ _id: Server._id }, { PageNumber: Server.PageNumber });
+    server.update({ _id: Server._id }, { PageNumber: Server.PageNumber });
     return getCredentials(Server);
   }
   Server.PageNumber += 1;
