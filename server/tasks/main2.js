@@ -1,4 +1,5 @@
 /* eslint-disable no-await-in-loop */
+
 const { server } = require('../database/models');
 
 const { getCredentials } = require('./get_credentials');
