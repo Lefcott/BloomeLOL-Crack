@@ -32,6 +32,7 @@ const getCredentials = async Server => {
     for (let ii = 0; ii < passwords.length; ii += 1)
       pairs.push({ username: users[i], password: passwords[ii] });
   }
+  server.update({ _id: Server._id }, { $inc: { PageNumber: 1 } });
   return { pairs, url };
 };
 
