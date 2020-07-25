@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app",
-    "build": "apt-get install openvpn",
     "dev": "nodemon app -e env,js,json",
     "redis": "rdcli -h redis-16193.c11.us-east-1-3.ec2.cloud.redislabs.com -a QU92ikhCaOeA19sIB1ZF86dWWiUlfQyY -p 16193"
   },
