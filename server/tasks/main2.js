@@ -1,6 +1,7 @@
 /* eslint-disable no-await-in-loop */
 
 const { server } = require('../database/models');
+const { MACHINE_INDEX, THREADS } = require('../commons/env');
 
 const { getCredentials } = require('./get_credentials');
 const { checkAndStore } = require('./check_credentials');
@@ -19,10 +20,16 @@ const parallelProcess = async Server => {
 
 const init = async () => {
   const Servers = await server.get({});
+  if (!Servers) return init();
+  const programInterval = 5000;
+  const threadIndex = +process.env.threadID - 1;
+  const machineIndex = +MACHINE_INDEX;
   for (let i = 0; i < Servers.length; i += 1) {
     activeServers[Servers[i]._id] = true;
-    parallelProcess(Servers[i]);
+    const index = +THREADS * machineIndex * Servers.length + threadIndex * Servers.length + i;
+    console.log('machine', machineIndex, 'thread', threadIndex, 'server', i, ':', index);
+    setTimeout(parallelProcess, index * programInterval || 2, Servers[i]);
   }
 };
 
-// init();
+init();

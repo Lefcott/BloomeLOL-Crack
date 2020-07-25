@@ -1,7 +1,7 @@
 const { axios } = require('../commons/request');
 const { getCookies, setCookies } = require('../commons/cookies');
-const { getProxy } = require('../commons/proxy');
-const { proxy } = require('../database/models');
+// const { getProxy } = require('../commons/proxy');
+// const { proxy } = require('../database/models');
 
 const userAgent =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36';
@@ -10,14 +10,14 @@ const baseCookies =
 
 const areCredentialsOk = async (username, password, forceChangeProxy = false) => {
   console.log('Test Creds', username, password);
-  const Proxy = await getProxy(forceChangeProxy);
-  console.log('Proxy',  Proxy && Proxy.IP);
+  // const Proxy = await getProxy(forceChangeProxy);
+  // console.log('Proxy', Proxy && Proxy.IP);
   let cookies = baseCookies;
   let addCookies = '';
   const options = {
     url: 'https://auth.riotgames.com/api/v1/authorization',
     method: 'post',
-    httpsAgent: Proxy ? Proxy.agent : undefined,
+    // httpsAgent: Proxy ? Proxy.agent : undefined,
     headers: {
       accept: '*/*',
       'accept-encoding': 'gzip, deflate, br',
@@ -40,13 +40,13 @@ const areCredentialsOk = async (username, password, forceChangeProxy = false) =>
     }
   };
   const resp1_5 = await axios({ options, persist: true });
-  if (!resp1_5 && Proxy) {
+  if (!resp1_5) {
     console.log('  First request failure');
     // Assume the reason is the proxy
-    proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
+    // proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
     return areCredentialsOk(username, password, true);
   }
-  proxy.update({ _id: Proxy._id }, { $inc: { SuccessCount: 1 } });
+  // proxy.update({ _id: Proxy._id }, { $inc: { SuccessCount: 1 } });
   addCookies = getCookies(resp1_5.headers['set-cookie']);
   cookies = setCookies(cookies, addCookies);
   const resp2 = await axios({
@@ -54,7 +54,7 @@ const areCredentialsOk = async (username, password, forceChangeProxy = false) =>
     options: {
       url: 'https://auth.riotgames.com/api/v1/authorization',
       method: 'put',
-      httpsAgent: Proxy ? Proxy.agent : undefined,
+      // httpsAgent: Proxy ? Proxy.agent : undefined,
       headers: {
         accept: '*/*',
         'accept-encoding': 'gzip, deflate, br',
@@ -74,13 +74,13 @@ const areCredentialsOk = async (username, password, forceChangeProxy = false) =>
       }
     }
   });
-  if (!resp2 && Proxy) {
+  if (!resp2) {
     console.log('  Second request failure');
     // Assume the reason is the proxy
-    proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
+    // proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
     return areCredentialsOk(username, password, true);
   }
-  proxy.update({ _id: Proxy._id }, { $inc: { SuccessCount: 1 } });
+  // proxy.update({ _id: Proxy._id }, { $inc: { SuccessCount: 1 } });
   if (resp2.status < 200 || resp2.status > 299) return false;
   return !resp2.body.error;
 };
