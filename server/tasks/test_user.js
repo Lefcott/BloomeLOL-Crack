@@ -11,13 +11,13 @@ const baseCookies =
 const areCredentialsOk = async (username, password, forceChangeProxy = false) => {
   console.log('Test Creds', username, password);
   const Proxy = await getProxy(forceChangeProxy);
-  console.log('Proxy', Proxy.IP);
+  console.log('Proxy',  Proxy && Proxy.IP);
   let cookies = baseCookies;
   let addCookies = '';
   const options = {
     url: 'https://auth.riotgames.com/api/v1/authorization',
     method: 'post',
-    httpsAgent: Proxy.agent,
+    httpsAgent: Proxy ? Proxy.agent : undefined,
     headers: {
       accept: '*/*',
       'accept-encoding': 'gzip, deflate, br',
@@ -40,7 +40,7 @@ const areCredentialsOk = async (username, password, forceChangeProxy = false) =>
     }
   };
   const resp1_5 = await axios({ options, persist: true });
-  if (!resp1_5) {
+  if (!resp1_5 && Proxy) {
     console.log('  First request failure');
     // Assume the reason is the proxy
     proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
@@ -54,7 +54,7 @@ const areCredentialsOk = async (username, password, forceChangeProxy = false) =>
     options: {
       url: 'https://auth.riotgames.com/api/v1/authorization',
       method: 'put',
-      httpsAgent: Proxy.agent,
+      httpsAgent: Proxy ? Proxy.agent : undefined,
       headers: {
         accept: '*/*',
         'accept-encoding': 'gzip, deflate, br',
@@ -74,7 +74,7 @@ const areCredentialsOk = async (username, password, forceChangeProxy = false) =>
       }
     }
   });
-  if (!resp2) {
+  if (!resp2 && Proxy) {
     console.log('  Second request failure');
     // Assume the reason is the proxy
     proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });

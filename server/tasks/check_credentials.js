@@ -1,5 +1,5 @@
 const { account } = require('../database/models');
-const { rollbar } = require('../commons/rollbar');
+const rollbar = require('../commons/rollbar');
 
 const { areCredentialsOk } = require('./test_user');
 
