@@ -1,20 +1,23 @@
 const { axios } = require('../commons/request');
 const { getCookies, setCookies } = require('../commons/cookies');
-const { getProxyAgent } = require('../commons/proxy');
+const { getProxy } = require('../commons/proxy');
+const { proxy } = require('../database/models');
 
 const userAgent =
   'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36';
 const baseCookies =
   '__cfduid=df9a4b85e6c0ae707749820f51f81a7221595563294; clid=uw1; _ga=GA1.2.1373131905.1595563297; _gid=GA1.2.1531616600.1595563297; did=56492b45c0bb4c3da6f80a4b7d1cc432; __cf_bm=8afb464032602502f67f342b026ed7d381f55826-1595573964-1800-AbgeSQbY2XHyr8EzykTJbYBRhiC01GI7k17iX4ipZo3CZAPruZda+O3jvXS839XNp3EMqWHZP6eWvxecjvNJa2E=; asid=FfFmzBuzufudetlELO8OJgr7rI21tDD-rzon0hyu-IU.9v63ybRHl0M%3D;';
 
-const areCredentialsOk = async (username, password) => {
-  const agent = getProxyAgent();
+const areCredentialsOk = async (username, password, forceChangeProxy = false) => {
+  console.log('Test Creds', username, password);
+  const Proxy = await getProxy(forceChangeProxy);
+  console.log('Proxy', Proxy.IP);
   let cookies = baseCookies;
   let addCookies = '';
   const options = {
     url: 'https://auth.riotgames.com/api/v1/authorization',
     method: 'post',
-    httpsAgent: agent,
+    httpsAgent: Proxy.agent,
     headers: {
       accept: '*/*',
       'accept-encoding': 'gzip, deflate, br',
@@ -37,7 +40,13 @@ const areCredentialsOk = async (username, password) => {
     }
   };
   const resp1_5 = await axios({ options, persist: true });
-  if (!resp1_5) return false;
+  if (!resp1_5) {
+    console.log('  First request failure');
+    // Assume the reason is the proxy
+    proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
+    return areCredentialsOk(username, password, true);
+  }
+  proxy.update({ _id: Proxy._id }, { $inc: { SuccessCount: 1 } });
   addCookies = getCookies(resp1_5.headers['set-cookie']);
   cookies = setCookies(cookies, addCookies);
   const resp2 = await axios({
@@ -45,7 +54,7 @@ const areCredentialsOk = async (username, password) => {
     options: {
       url: 'https://auth.riotgames.com/api/v1/authorization',
       method: 'put',
-      httpsAgent: agent,
+      httpsAgent: Proxy.agent,
       headers: {
         accept: '*/*',
         'accept-encoding': 'gzip, deflate, br',
@@ -65,7 +74,14 @@ const areCredentialsOk = async (username, password) => {
       }
     }
   });
-  if (!resp2 || resp2.status < 200 || resp2.status > 299) return false;
+  if (!resp2) {
+    console.log('  Second request failure');
+    // Assume the reason is the proxy
+    proxy.update({ _id: Proxy._id }, { $inc: { FailureCount: 1 } });
+    return areCredentialsOk(username, password, true);
+  }
+  proxy.update({ _id: Proxy._id }, { $inc: { SuccessCount: 1 } });
+  if (resp2.status < 200 || resp2.status > 299) return false;
   return !resp2.body.error;
 };
 

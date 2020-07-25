@@ -20,7 +20,7 @@ function Axios({ options, timeout = 30000, id } = {}) {
       .catch(error => {
         clearTimeout(timeoutId);
         if (!error.response) {
-          rollbar.error(error);
+          console.error(`Request Error: ${error.code}: ${error.address}`);
           return resolve(null);
         }
         const { status, data: body, headers } = error.response;
@@ -40,7 +40,7 @@ function Axios({ options, timeout = 30000, id } = {}) {
  * @param {boolean} Configuration.persist.condition DEFAULT {} Whether to persist the result of the request with condition
  * @param {number} Configuration.timeout DEFAULT 30000 Timeout for the request
  * @param {string} Configuration.id DEFAULT uuidv4() Request ID
- * @returns {Promise<{ id: string, status: number, statusCode: number, body: *, headers: * }>}
+ * @returns {Promise<{ id: string, status: number, body: *, headers: * }>}
  */
 async function AxiosPersist(Configuration = {}) {
   Configuration.id = Configuration.id || uuid();
@@ -61,31 +61,31 @@ async function AxiosPersist(Configuration = {}) {
   const { url, method, data, headers, params } = Configuration.options;
   const reg = response
     ? {
-        uid: Configuration.id,
-        env: NODE_ENV,
-        url,
-        method,
-        failed: false,
-        body: data,
-        headers,
-        params,
-        response: {
-          status: response.status.toString(),
-          body: response.body,
-          headers: response.headers
-        }
+      uid: Configuration.id,
+      env: NODE_ENV,
+      url,
+      method,
+      failed: false,
+      body: data,
+      headers,
+      params,
+      response: {
+        status: response.status.toString(),
+        body: response.body,
+        headers: response.headers
       }
+    }
     : {
-        uid: Configuration.id,
-        env: NODE_ENV,
-        url,
-        method,
-        failed: true,
-        body: data,
-        headers,
-        params,
-        response: { status: 'failed' }
-      };
+      uid: Configuration.id,
+      env: NODE_ENV,
+      url,
+      method,
+      failed: true,
+      body: data,
+      headers,
+      params,
+      response: { status: 'failed' }
+    };
   request.save(reg);
   return response;
 }
@@ -100,7 +100,7 @@ async function AxiosPersist(Configuration = {}) {
  * @param {number} Options.attempts DEFAULT 8 - Max number of request attempts
  * @param {number} Options.timeout DEFAULT 30000 - Timeout for each request
  * @param {string} id DEFAULT uuid() Polling ID
- * @returns {Promise<{ id: string, status: number, statusCode: number, body: *, headers: * }>}
+ * @returns {Promise<{ id: string, status: number, body: *, headers: * }>}
  */
 const polling = (
   { url, condition = { status: 202 }, persist = false, interval = 1000, attempts = 8, timeout = 30000 },

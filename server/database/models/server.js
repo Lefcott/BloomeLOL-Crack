@@ -6,7 +6,8 @@ module.exports = mongoose.model(
   new mongoose.Schema(
     {
       Url: { type: String, required: true },
-      PageNumber: { type: Number, required: true }
+      PageNumber: { type: Number, required: true },
+      InitialPageNumber: { type: Number, required: true }
     },
     { collection: 'Servers' }
   ).plugin(leanDefaults)

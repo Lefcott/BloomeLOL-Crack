@@ -6,11 +6,13 @@ require('..');
 
 const models = {};
 
-const get = Model => (where = {}, sort = {}) =>
+const get = Model => (where = {}, { sort = {}, skip = 0, limit = 0 } = {}) =>
   new Promise(resolve => {
     Model.find(where)
       .lean({ defaults: true })
       .sort(sort)
+      .skip(skip)
+      .limit(limit)
       .then(resolve)
       .catch(error => {
         rollbar.error(error);

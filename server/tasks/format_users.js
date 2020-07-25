@@ -4,7 +4,7 @@ const prefix = '/summoner/userName=';
  * Parse Users from HTML page
  * @param {string} html
  */
-const getUsers = html => {
+const formatUsers = html => {
   const matches = html.match(regex);
   const users = [];
   for (let i = 0; i < matches.length; i += 1) {
@@ -19,4 +19,4 @@ const getUsers = html => {
   return users;
 };
 
-module.exports = { getUsers };
+module.exports = { formatUsers };

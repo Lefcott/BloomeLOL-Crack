@@ -13,7 +13,7 @@ const urls = require('../constants/urls');
 const { getPasswordSet } = require('../constants/tests');
 const { account } = require('../database/models');
 
-const { getUsers } = require('./get_users');
+const { formatUsers } = require('./format_users');
 const { areCredentialsOk } = require('./test_user');
 
 const interval = +TEST_INTERVAL;
@@ -23,6 +23,7 @@ const states = urls.map((url, i) => ({ url, pageNum: minPageNum + i, lastUsers: 
 
 const checkAndStore = async (username, password, url) => {
   const validCredentials = await areCredentialsOk(username, password);
+  console.log('validCredentials', validCredentials);
   if (!validCredentials) return;
   account.save({
     UserName: username,
@@ -36,7 +37,7 @@ const requestUsers = async (url, state) => {
   // User list request
   const userResp = await axios({ options: { url } });
   if (!userResp) return;
-  const users = getUsers(userResp.body);
+  const users = formatUsers(userResp.body);
   if (haveSameElements(users, state.lastUsers)) {
     console.log('Same elements', users, state.lastUsers);
     state.pageNum = minPageNum;
